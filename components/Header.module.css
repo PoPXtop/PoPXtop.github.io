@@ -1,0 +1,190 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(-45deg, #334155, #475569, #64748b, #334155);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.desktopMenu {
+  display: flex;
+  gap: 2rem;
+}
+
+.desktopMenu a {
+  color: #ffffff;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.desktopMenu a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.8);
+  transition: width 0.3s ease;
+}
+
+.desktopMenu a:hover::after {
+  width: 80%;
+}
+
+.desktopMenu a:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+.mobileButton {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.mobileButton:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.mobileButton span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+.mobileMenu {
+  background: linear-gradient(-45deg, #64748b, #7dd3fc, #a5f3fc);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 1rem 20px;
+}
+
+.mobileMenu a {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: #ffffff;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.mobileMenu a:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateX(5px);
+}
+
+.mobileMenu a:last-child {
+  margin-bottom: 0;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .desktopMenu {
+    display: none;
+  }
+
+  .mobileButton {
+    display: flex;
+  }
+
+  .logo {
+    font-size: 1.25rem;
+  }
+}
+
+/* Тёмная тема */
+html[data-theme="dark"] .header {
+  background: linear-gradient(-45deg, #1e293b, #334155, #475569, #1e293b) !important;
+  background-size: 400% 400% !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+}
+
+html[data-theme="dark"] .logo {
+  color: #f1f5f9 !important;
+}
+
+html[data-theme="dark"] .desktopMenu a {
+  color: #cbd5e1 !important;
+}
+
+html[data-theme="dark"] .desktopMenu a:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+html[data-theme="dark"] .mobileButton {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+html[data-theme="dark"] .mobileButton span {
+  background-color: #f1f5f9 !important;
+}
+
+html[data-theme="dark"] .mobileMenu {
+  background: linear-gradient(-45deg, #1e293b, #334155, #475569) !important;
+  border-top-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+html[data-theme="dark"] .mobileMenu a {
+  color: #cbd5e1 !important;
+}
+
+html[data-theme="dark"] .mobileMenu a:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+}

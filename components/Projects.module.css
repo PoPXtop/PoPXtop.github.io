@@ -1,0 +1,186 @@
+.projects {
+  padding: 5rem 0;
+  background-color: #f9fafb;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #1e293b;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.projectCard {
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.projectCard:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+}
+
+.projectContent {
+  padding: 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.projectTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #1e293b;
+}
+
+.projectDescription {
+  color: #64748b;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  flex: 1;
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tech {
+  padding: 0.375rem 0.875rem;
+  background-color: #dbeafe;
+  color: #1e40af;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.projectLinks {
+  display: flex;
+  gap: 1rem;
+  margin-top: auto;
+}
+
+.demoLink,
+.codeLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.demoLink {
+  background-color: #3b82f6;
+  color: #ffffff;
+}
+
+.demoLink:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+}
+
+.codeLink {
+  background-color: #f1f5f9;
+  color: #475569;
+}
+
+.codeLink:hover {
+  background-color: #e2e8f0;
+  transform: translateY(-2px);
+}
+
+/* Адаптивность */
+@media (max-width: 1024px) {
+  .projectsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .projects {
+    padding: 3rem 0;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+  }
+
+  .projectsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .projectContent {
+    padding: 1.5rem;
+  }
+}
+
+/* Тёмная тема */
+html[data-theme="dark"] .projects {
+  background-color: #0f172a !important;
+}
+
+html[data-theme="dark"] .sectionTitle {
+  color: #f1f5f9 !important;
+}
+
+html[data-theme="dark"] .projectCard {
+  background-color: #1e293b !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3) !important;
+}
+
+html[data-theme="dark"] .projectCard:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4) !important;
+}
+
+html[data-theme="dark"] .projectTitle {
+  color: #f1f5f9 !important;
+}
+
+html[data-theme="dark"] .projectDescription {
+  color: #cbd5e1 !important;
+}
+
+html[data-theme="dark"] .tech {
+  background-color: #1e40af !important;
+  color: #dbeafe !important;
+}
+
+html[data-theme="dark"] .demoLink {
+  background-color: #3b82f6 !important;
+  color: #ffffff !important;
+}
+
+html[data-theme="dark"] .codeLink {
+  background-color: #475569 !important;
+  color: #f1f5f9 !important;
+}
+
+html[data-theme="dark"] .codeLink:hover {
+  background-color: #64748b !important;
+}

@@ -1,0 +1,179 @@
+/* ========== ТЁМНАЯ ТЕМА ========== */
+html[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+html[data-theme="dark"] body {
+  color: #f1f5f9 !important;
+  background-color: #0f172a !important;
+}
+
+/* Header */
+html[data-theme="dark"] .header {
+  background: linear-gradient(-45deg, #1e293b, #334155, #475569, #1e293b) !important;
+  background-size: 400% 400% !important;
+}
+
+html[data-theme="dark"] .logo {
+  color: #f1f5f9 !important;
+}
+
+html[data-theme="dark"] .desktopMenu a {
+  color: #f1f5f9 !important;
+}
+
+/* Hero секция */
+html[data-theme="dark"] #home {
+  background: linear-gradient(-45deg, #1e293b, #334155, #475569, #1e293b) !important;
+}
+
+html[data-theme="dark"] .greeting {
+  color: #cbd5e1 !important;
+}
+
+html[data-theme="dark"] .name {
+  color: #f1f5f9 !important;
+}
+
+html[data-theme="dark"] .title {
+  color: #94a3b8 !important;
+}
+
+html[data-theme="dark"] .description {
+  color: #cbd5e1 !important;
+}
+
+html[data-theme="dark"] .skillsLabel {
+  color: #94a3b8 !important;
+}
+
+html[data-theme="dark"] .skill {
+  background: rgba(59, 130, 246, 0.3) !important;
+  color: #dbeafe !important;
+  border-color: rgba(59, 130, 246, 0.5) !important;
+}
+
+html[data-theme="dark"] .primaryButton {
+  background: #3b82f6 !important;
+  color: #ffffff !important;
+}
+
+html[data-theme="dark"] .secondaryButton {
+  border-color: #60a5fa !important;
+  color: #f1f5f9 !important;
+}
+
+html[data-theme="dark"] .socialLink {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Обо мне */
+html[data-theme="dark"] .sectionTitle {
+  color: #f1f5f9 !important;
+}
+
+html[data-theme="dark"] .description {
+  color: #cbd5e1 !important;
+}
+
+html[data-theme="dark"] .detailCard {
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%) !important;
+}
+
+html[data-theme="dark"] .detailTitle {
+  color: #f1f5f9 !important;
+}
+
+html[data-theme="dark"] .detailText {
+  color: #94a3b8 !important;
+}
+
+html[data-theme="dark"] .skillsTitle {
+  color: #f1f5f9 !important;
+}
+
+html[data-theme="dark"] .skillsSubtitle {
+  color: #94a3b8 !important;
+}
+
+html[data-theme="dark"] .skillCategory {
+  background: #1e293b !important;
+  border-color: #334155 !important;
+}
+
+html[data-theme="dark"] .skillCategoryTitle {
+  color: #60a5fa !important;
+}
+
+html[data-theme="dark"] .skillCategoryList li {
+  color: #cbd5e1 !important;
+}
+
+html[data-theme="dark"] .contactCard {
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%) !important;
+  border-color: #334155 !important;
+}
+
+html[data-theme="dark"] .contactCardLabel {
+  color: #94a3b8 !important;
+}
+
+html[data-theme="dark"] .contactCardValue {
+  color: #f1f5f9 !important;
+}
+
+/* Проекты */
+html[data-theme="dark"] .projects {
+  background-color: #1e293b !important;
+}
+
+html[data-theme="dark"] .projectCard {
+  background-color: #334155 !important;
+}
+
+html[data-theme="dark"] .projectTitle {
+  color: #f1f5f9 !important;
+}
+
+html[data-theme="dark"] .projectDescription {
+  color: #cbd5e1 !important;
+}
+
+html[data-theme="dark"] .tech {
+  background-color: #1e40af !important;
+  color: #dbeafe !important;
+}
+
+html[data-theme="dark"] .demoLink {
+  background-color: #3b82f6 !important;
+  color: #ffffff !important;
+}
+
+html[data-theme="dark"] .codeLink {
+  background-color: #475569 !important;
+  color: #f1f5f9 !important;
+}
+
+/* Прогресс-бары */
+html[data-theme="dark"] .skillLevelTitle {
+  color: #f1f5f9 !important;
+}
+
+html[data-theme="dark"] .skillBarName {
+  color: #cbd5e1 !important;
+}
+
+html[data-theme="dark"] .skillBarPercent {
+  color: #60a5fa !important;
+}
+
+html[data-theme="dark"] .skillBarTrack {
+  background: #475569 !important;
+}
+
+/* Footer */
+html[data-theme="dark"] footer {
+  background-color: #0f172a !important;
+  color: #94a3b8 !important;
+}

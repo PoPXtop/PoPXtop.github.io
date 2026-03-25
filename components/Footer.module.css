@@ -1,0 +1,57 @@
+.footer {
+  background-color: #1f2937;
+  color: #ffffff;
+  padding: 2rem 0;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.copyright {
+  margin-bottom: 1rem;
+  color: #9ca3af;
+}
+
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.socialLinks a {
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.socialLinks a:hover {
+  color: #60a5fa;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .socialLinks {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+
+/* Тёмная тема */
+html[data-theme="dark"] .footer {
+  background-color: #020617 !important;
+}
+
+html[data-theme="dark"] .copyright {
+  color: #64748b !important;
+}
+
+html[data-theme="dark"] .socialLinks a {
+  color: #94a3b8 !important;
+}
+
+html[data-theme="dark"] .socialLinks a:hover {
+  color: #60a5fa !important;
+}

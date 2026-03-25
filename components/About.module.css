@@ -1,0 +1,358 @@
+.about {
+  padding: 5rem 0;
+  background-color: #ffffff;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #1e293b;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Описание */
+.description {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #475569;
+  text-align: center;
+  margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Блок с деталями */
+.detailsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.detailCard {
+  padding: 2rem;
+  background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+  border-radius: 16px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.detailCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.detailIcon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.detailTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 0.75rem;
+}
+
+.detailText {
+  font-size: 0.95rem;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+/* Навыки */
+.skillsSection {
+  margin-bottom: 4rem;
+}
+
+.skillsTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #1e293b;
+}
+
+.skillsSubtitle {
+  font-size: 1.125rem;
+  color: #64748b;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.skillCategory {
+  background: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 2px solid #e2e8f0;
+}
+
+.skillCategoryTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #3b82f6;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.skillCategoryList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skillCategoryList li {
+  padding: 0.5rem 0;
+  color: #475569;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.skillCategoryList li::before {
+  content: '▹';
+  color: #3b82f6;
+  font-weight: bold;
+}
+
+/* Теги навыков */
+.skillsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 3rem;
+}
+
+.skill {
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+  color: #1e40af;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.skill:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+  border-color: #3b82f6;
+}
+
+/* Уровень владения */
+.skillLevel {
+  margin-bottom: 2rem;
+}
+
+.skillLevelTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.skillBar {
+  margin-bottom: 1.25rem;
+}
+
+.skillBarHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.skillBarName {
+  font-weight: 500;
+  color: #334155;
+}
+
+.skillBarPercent {
+  color: #3b82f6;
+  font-weight: 600;
+}
+
+.skillBarTrack {
+  height: 8px;
+  background: #e2e8f0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.skillBarFill {
+  height: 100%;
+  background: linear-gradient(90deg, #3b82f6, #60a5fa);
+  border-radius: 4px;
+  transition: width 1s ease;
+}
+
+/* Контактная информация */
+.contactInfo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.contactCard {
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border-radius: 12px;
+  text-align: center;
+  border: 2px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.contactCard:hover {
+  border-color: #3b82f6;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.contactCardIcon {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.contactCardLabel {
+  font-size: 0.875rem;
+  color: #64748b;
+  margin-bottom: 0.5rem;
+}
+
+.contactCardValue {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1e293b;
+  word-break: break-all;
+}
+
+/* Адаптивность */
+@media (max-width: 968px) {
+  .detailsGrid,
+  .contactInfo {
+    grid-template-columns: 1fr;
+  }
+
+  .skillsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .about {
+    padding: 3rem 0;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+  }
+
+  .skillsTitle {
+    font-size: 1.5rem;
+  }
+
+  .detailCard {
+    padding: 1.5rem;
+  }
+}
+
+/* Тёмная тема */
+html[data-theme="dark"] .about {
+  background-color: #0f172a !important;
+}
+
+html[data-theme="dark"] .sectionTitle {
+  color: #f1f5f9 !important;
+}
+
+html[data-theme="dark"] .description {
+  color: #cbd5e1 !important;
+}
+
+html[data-theme="dark"] .detailCard {
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%) !important;
+}
+
+html[data-theme="dark"] .detailTitle {
+  color: #f1f5f9 !important;
+}
+
+html[data-theme="dark"] .detailText {
+  color: #94a3b8 !important;
+}
+
+html[data-theme="dark"] .skillsTitle {
+  color: #f1f5f9 !important;
+}
+
+html[data-theme="dark"] .skillsSubtitle {
+  color: #94a3b8 !important;
+}
+
+html[data-theme="dark"] .skillCategory {
+  background: #1e293b !important;
+  border-color: #334155 !important;
+}
+
+html[data-theme="dark"] .skillCategoryTitle {
+  color: #60a5fa !important;
+}
+
+html[data-theme="dark"] .skillCategoryList li {
+  color: #cbd5e1 !important;
+}
+
+html[data-theme="dark"] .skill {
+  background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%) !important;
+  color: #dbeafe !important;
+}
+
+html[data-theme="dark"] .contactCard {
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%) !important;
+  border-color: #334155 !important;
+}
+
+html[data-theme="dark"] .contactCardLabel {
+  color: #94a3b8 !important;
+}
+
+html[data-theme="dark"] .contactCardValue {
+  color: #f1f5f9 !important;
+}
+
+html[data-theme="dark"] .skillLevelTitle {
+  color: #f1f5f9 !important;
+}
+
+html[data-theme="dark"] .skillBarName {
+  color: #cbd5e1 !important;
+}
+
+html[data-theme="dark"] .skillBarPercent {
+  color: #60a5fa !important;
+}
+
+html[data-theme="dark"] .skillBarTrack {
+  background: #475569 !important;
+}

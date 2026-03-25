@@ -1,0 +1,99 @@
+.contacts {
+  padding: 5rem 0;
+  background-color: #ffffff;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #1e293b;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.socialButtons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.socialButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #f3f4f6;
+  border-radius: 8px;
+  color: #374151;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-decoration: none !important;
+  border: none;
+  cursor: pointer;
+}
+
+.socialButton:hover {
+  background-color: #2563eb;
+  color: #ffffff;
+  transform: translateY(-2px);
+  text-decoration: none !important;
+}
+
+.contactText {
+  color: #6b7280;
+  font-size: 1.125rem;
+}
+
+/* Тёмная тема */
+html[data-theme="dark"] .contacts {
+  background-color: #0f172a !important;
+}
+
+html[data-theme="dark"] .sectionTitle {
+  color: #f1f5f9 !important;
+}
+
+html[data-theme="dark"] .socialButton {
+  background-color: #1e293b !important;
+  color: #cbd5e1 !important;
+  text-decoration: none !important;
+}
+
+html[data-theme="dark"] .socialButton:hover {
+  background-color: #3b82f6 !important;
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+html[data-theme="dark"] .contactText {
+  color: #94a3b8 !important;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .contacts {
+    padding: 3rem 0;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+  }
+
+  .socialButtons {
+    gap: 0.75rem;
+  }
+
+  .socialButton {
+    padding: 0.625rem 1.25rem;
+    font-size: 0.875rem;
+  }
+}
